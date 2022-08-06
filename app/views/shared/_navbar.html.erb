@@ -1,0 +1,13 @@
+
+
+<nav class="navbar">
+  <% if !current_page?("/") && !current_page?(groups_path) %>
+    <div class="back-arrow">
+      <%= link_to "<", "/" %>
+    </div>
+  <% end %>
+  <p> <%= render partial: 'shared/navtitle' %> </p>
+  <%if user_signed_in?%>
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'btn-sgnout' %>
+  <%end%>
+</nav>
