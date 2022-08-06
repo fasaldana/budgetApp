@@ -32,11 +32,16 @@ body {
     --secondary-color: #5fb523;
     --text-color: #434b54;
     --header-font-weight: bold;
-    --text-font-weight: normal;
+    --text-font-weight: light;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: var(--header-font-weight);
+}
+
+p {
+    font-weight: var(--text-font-weight);
+    font-size: 20px;
 }
 
 .app-logo {
@@ -52,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     height: 20vh;
+    gap: 20px;
 }
 
 .btn-primary {
@@ -79,3 +85,143 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/*------------------------------navbar------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*-------------------------------log-in------------------------------*/
+.new_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    gap: 20px;
+}
+
+.field label{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+
+.field input {
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+
+.btn-sgnout {
+    background: none;
+    color: #fff;
+}
+
+/*-------------------------------groups------------------------------*/
+.groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.group-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+    height: 10vh;
+    border: 1px solid var(--text-color);
+    background-color: #fff;
+}
+
+.group-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.groups-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.total-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.groups-options .button_to {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+    background: none;
+}
+
+.btn-tertiary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 8vh;
+    border-radius: 0;
+    font-size: 25px;
+}
+
+/*-------------------------------expenses------------------------------*/
+.transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.expenses-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+    height: 10vh;
+    border: 1px solid var(--text-color);
+    background-color: #fff;
+}
