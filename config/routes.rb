@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :groups
 
   resources :groups, only: [] do
-    resources :expenses, only: [:new, :create, :destroy]
+    resources :expenses, only: %i[new create destroy]
   end
 
   authenticated :user do
