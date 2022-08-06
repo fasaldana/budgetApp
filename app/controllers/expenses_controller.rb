@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ExpensesController < ApplicationController
   before_action :set_group, only: %i[new create edit update destroy]
   before_action :set_expense, only: %i[edit update destroy]
