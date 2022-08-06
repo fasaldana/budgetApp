@@ -1,5 +1,7 @@
-<h1>Welcome</h1>
-<ul>
-<li><%= link_to 'Sign up', new_user_registration_path %></li>
-<li><%= link_to 'Sign in', user_session_path %></li>
-</ul>
+<div class="app-logo">
+    <h1>Welcome</h1>
+</div>
+<div class="login-signin-btns">
+    <%= link_to 'Sign In', new_user_session_path, class: 'btn btn-primary' %>
+    <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-secondary' %>
+</div>
