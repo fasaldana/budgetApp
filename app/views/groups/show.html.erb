@@ -8,3 +8,9 @@
 
   <%= button_to "Destroy this group", @group, method: :delete %>
 </div>
+
+<div class="transactions">
+  <%= render @group.expenses.order(created_at: :desc) %>
+</div>
+
+<%= link_to "New Transaction", new_group_expense_path(@group) %>

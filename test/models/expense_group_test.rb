@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class EntityGroupTest < ActiveSupport::TestCase
+class ExpenseGroupTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

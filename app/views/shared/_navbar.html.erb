@@ -1,0 +1,11 @@
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <%if user_signed_in?%>
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'btn' %>
+      <%end%>
+    </ul>
+  </div>
+</nav>
