@@ -1,7 +1,7 @@
 
 
 <nav class="navbar">
-  <% if !current_page?("/") %>
+  <% if !current_page?("/") && !current_page?(groups_path) %>
     <div class="back-arrow">
       <%= link_to "<", "/" %>
     </div>
