@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="groups">
+  <% @groups.each do |group| %>
+    <%= render group %>
+  <% end %>
+</div>
+
+<%= link_to "New group", new_group_path, class: 'btn-tertiary' %>

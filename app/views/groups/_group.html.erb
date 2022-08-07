@@ -1,0 +1,12 @@
+<div id="<%= dom_id group %>" class="group-container">
+
+  <img src="<%= group.icon %>" alt="<%= group.name %>" class="group-avatar">
+  <p>
+    <%= link_to group.name, group %>
+  </p>
+  <p>
+    Transactions:
+    <%= group.total_expenses_count %>
+  </p>
+
+</div>
